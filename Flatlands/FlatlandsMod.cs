@@ -10,9 +10,9 @@ namespace Flatlands
     {
         public override void OnGenerateFertileTiles(TerrainGen terrain)
         {
-            for (int x = 0; x < World.inst.GridWidth; x++)
+            for (int x = 1; x < World.inst.GridWidth-1; x++)
             {
-                for (int y = 0; y < World.inst.GridHeight; y++)
+                for (int y = 1; y < World.inst.GridHeight-1; y++)
                 {
                     terrain.SetFertileTile(x, y, 2);
                 }
@@ -21,9 +21,9 @@ namespace Flatlands
 
         public override void OnGenerateWater(TerrainGen terrain)
         {
-            for (int x = 0; x < World.inst.GridWidth; x++)
+            for (int x = 1; x < World.inst.GridWidth-1; x++)
             {
-                for (int y = 0; y < World.inst.GridHeight; y++)
+                for (int y = 1; y < World.inst.GridHeight-1; y++)
                 {
                     terrain.SetLandTile(x, y);
                     Cell cell = World.inst.GetCellData(x, y);
