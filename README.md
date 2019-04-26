@@ -1,4 +1,4 @@
-# TerahModPack
+# TerahModPack (Not maintained anymore)
 
 A mod pack for Kingdoms & Castles using [Merlin](https://github.com/terahxluna/Merlin)
 
